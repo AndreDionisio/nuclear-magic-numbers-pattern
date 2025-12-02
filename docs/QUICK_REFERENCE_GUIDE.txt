@@ -1,0 +1,228 @@
+═══════════════════════════════════════════════════════════════════════
+  GUIA RÁPIDO: FÓRMULA DOS NÚMEROS MÁGICOS
+═══════════════════════════════════════════════════════════════════════
+
+CARTÃO DE REFERÊNCIA - IMPRIMIR E USAR!
+
+═══════════════════════════════════════════════════════════════════════
+AS TRÊS EQUAÇÕES
+═══════════════════════════════════════════════════════════════════════
+
+Para calcular o próximo número mágico M_{n+1} a partir de M_n:
+
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║  PASSO 1:  Δn = (c_start × (c_start + 2)) / 4               ║
+║                                                               ║
+║  PASSO 2:  C_total = Δn + c_high-j                          ║
+║                                                               ║
+║  PASSO 3:  M_{n+1} = M_n + C_total                          ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════
+TABELA DE PARÂMETROS
+═══════════════════════════════════════════════════════════════════════
+
+┌──────┬───────────┬───────────┬────────┬──────────┬──────────┐
+│  M_n │ c_start   │ c_high-j  │  Δn    │ C_total  │  M_{n+1} │
+├──────┼───────────┼───────────┼────────┼──────────┼──────────┤
+│   0  │     0     │     2     │   0    │    2     │    2     │
+│   2  │     2     │     4     │   2    │    6     │    8     │
+│   8  │     4     │     6     │   6    │   12     │   20     │
+│  20  │     2     │     6     │   2    │    8     │   28     │
+│  28  │     6     │    10     │  12    │   22     │   50     │
+│  50  │     8     │    12     │  20    │   32     │   82     │
+│  82  │    10     │    14     │  30    │   44     │  126     │
+│ 126  │    12     │    16     │  42    │   58     │  184     │
+└──────┴───────────┴───────────┴────────┴──────────┴──────────┘
+
+═══════════════════════════════════════════════════════════════════════
+COMO USAR
+═══════════════════════════════════════════════════════════════════════
+
+EXEMPLO: Calcular magic number após 82
+
+1. Dado: M_n = 82
+   Parâmetros: c_start = 10, c_high-j = 14
+
+2. Calcular Δn:
+   Δn = (10 × 12) / 4
+   Δn = 120 / 4
+   Δn = 30
+
+3. Calcular C_total:
+   C_total = 30 + 14
+   C_total = 44
+
+4. Calcular M_{n+1}:
+   M_{n+1} = 82 + 44
+   M_{n+1} = 126 ✓
+
+═══════════════════════════════════════════════════════════════════════
+SIGNIFICADO FÍSICO
+═══════════════════════════════════════════════════════════════════════
+
+c_start:
+  Capacidade do último orbital preenchido
+  Corresponde a 2j+1 do orbital de maior momento angular
+
+Δn:
+  Soma da sequência DECRESCENTE de capacidades
+  Exemplo: 10→8→6→4→2 soma Δn = 30
+  
+c_high-j:
+  Capacidade do orbital "esfera" que inicia nova sequência
+  Sempre aumenta: 2, 4, 6, 8, 10, 12, 14, 16...
+
+C_total:
+  Total de nucleons adicionados entre magic numbers
+
+═══════════════════════════════════════════════════════════════════════
+PADRÃO DE SEQUÊNCIAS DECRESCENTES
+═══════════════════════════════════════════════════════════════════════
+
+Magic 2:    [2]
+Magic 8:    [4→2]
+Magic 20:   [6→4→2]
+Magic 28:   [8]                    ← esfera fecha
+Magic 50:   [6→4→2] + [10]
+Magic 82:   [8→6→4→2] + [12]
+Magic 126:  [10→8→6→4→2] + [14]
+Magic 184:  [12→10→8→6→4→2] + [16]
+
+REGRA: Sempre decresce de 2 em 2 até chegar em 2
+
+═══════════════════════════════════════════════════════════════════════
+RELAÇÃO FUNDAMENTAL
+═══════════════════════════════════════════════════════════════════════
+
+                    ╔═══════════════╗
+                    ║  c = 2l + 2   ║
+                    ╚═══════════════╝
+
+Para orbitais de alto-j onde j = l + 1/2
+
+Quando l aumenta em +2 (números ímpares 1→3, 3→5, 5→7...):
+    Δc = 2 × Δl = 2 × 2 = 4
+
+Isto explica por que c_high-j ≈ c_start + 4
+
+═══════════════════════════════════════════════════════════════════════
+HIERARQUIA DE ESTABILIDADE
+═══════════════════════════════════════════════════════════════════════
+
+Quanto MAIOR o Δn, MAIS ESTÁVEL o núcleo:
+
+Δn = 2   → Estabilidade LOCAL     (⁴He, ⁴⁰Ca)
+Δn = 6   → Estabilidade SUBSHELL  (¹²C, ¹⁶O)
+Δn = 12  → Estabilidade REGIONAL  (²⁰Ne, ⁵⁶Ni)
+Δn = 20  → Fechamento FORTE       (¹⁰⁰Sn)
+Δn = 30  → Magic Number MAJOR     (²⁰⁸Pb)
+Δn = 42  → Fechamento COMPLETO    (predição 184)
+
+═══════════════════════════════════════════════════════════════════════
+VALIDAÇÃO EXPERIMENTAL
+═══════════════════════════════════════════════════════════════════════
+
+Correlação Δn vs Energia de Ligação por Nucleon (BE/A):
+
+┌──────────┬────────┬────────────┐
+│ Núcleo   │   Δn   │ BE/A (MeV) │
+├──────────┼────────┼────────────┤
+│ ⁴He      │   2    │   7.074    │
+│ ¹²C      │   6    │   7.680    │
+│ ¹⁶O      │   6    │   7.976    │
+│ ²⁰Ne     │  12    │   8.032    │
+│ ⁴⁰Ca     │   2    │   8.551    │
+│ ⁵⁶Ni     │  12    │   8.643    │
+│ ¹⁰⁰Sn    │  20    │   8.667    │← máximo
+│ ²⁰⁸Pb    │  30    │   7.867    │
+└──────────┴────────┴────────────┘
+
+Núcleos com mesmo Δn têm estabilidades similares!
+
+═══════════════════════════════════════════════════════════════════════
+EXERCÍCIOS
+═══════════════════════════════════════════════════════════════════════
+
+1. Verificar: 28 → 50
+   c_start = 6, c_high-j = 10
+   Δn = ?
+   M_{n+1} = ?
+
+2. Verificar: 50 → 82
+   c_start = 8, c_high-j = 12
+   Δn = ?
+   M_{n+1} = ?
+
+3. Predizer: 184 → ?
+   Assumir: c_start = 14, c_high-j = 18
+   Δn = ?
+   M_{n+1} = ?
+
+RESPOSTAS:
+1. Δn = 12, M_{n+1} = 50 ✓
+2. Δn = 20, M_{n+1} = 82 ✓
+3. Δn = 56, M_{n+1} = 258 (próximo após 184!)
+
+═══════════════════════════════════════════════════════════════════════
+LIMITAÇÕES
+═══════════════════════════════════════════════════════════════════════
+
+A fórmula é FENOMENOLÓGICA, não rigorosa:
+
+❌ Não prevê ordenamento exato de níveis
+❌ Não captura efeitos de deformação nuclear
+❌ Não funciona para núcleos muito longe da estabilidade
+❌ Parâmetros são calibrados, não derivados
+
+✅ MAS é excelente para:
+   • Ensino e aprendizado
+   • Estimativas rápidas
+   • Compreensão de padrões
+   • Predições de magic numbers principais
+
+═══════════════════════════════════════════════════════════════════════
+COMPARAÇÃO COM VSEPR (QUÍMICA)
+═══════════════════════════════════════════════════════════════════════
+
+VSEPR prediz geometria molecular contando pares de elétrons
+SEM resolver equação de Schrödinger
+
+ESTA FÓRMULA prediz números mágicos contando capacidade de pareamento
+SEM resolver modelo de camadas completo
+
+Ambas: SIMPLICIDADE + INSIGHT FÍSICO = PODER PEDAGÓGICO
+
+═══════════════════════════════════════════════════════════════════════
+REFERÊNCIAS
+═══════════════════════════════════════════════════════════════════════
+
+Artigo completo:
+  A. L. T. Dionísio, "A Phenomenological Pattern for Nuclear 
+  Magic Numbers," submetido a Preprints.org (2025)
+
+Dados experimentais:
+  AME2020 - Atomic Mass Evaluation
+  ENSDF - Evaluated Nuclear Structure Data File
+
+═══════════════════════════════════════════════════════════════════════
+COMO CITAR
+═══════════════════════════════════════════════════════════════════════
+
+[Em preparação - adicionar DOI após publicação]
+
+Formato sugerido:
+  Dionísio, A. L. T. (2025). A Phenomenological Pattern for 
+  Nuclear Magic Numbers. Preprints.org. 
+  https://doi.org/[DOI_AQUI]
+
+═══════════════════════════════════════════════════════════════════════
+
+Criado por: André Luís Tomaz Dionísio
+Instituição: EPHEC Brussels, Belgium
+Email: andreluisdionisio@gmail.com
+Data: Dezembro 2025
+
+═══════════════════════════════════════════════════════════════════════

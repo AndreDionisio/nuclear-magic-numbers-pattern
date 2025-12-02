@@ -1,0 +1,385 @@
+═══════════════════════════════════════════════════════════════════════
+  PYTHON SCRIPTS GUIDE
+  Magic Numbers Research Tools
+═══════════════════════════════════════════════════════════════════════
+
+Autor: André Luís Tomaz Dionísio
+Instituição: EPHEC Brussels, Belgium
+Data: Dezembro 2025
+
+═══════════════════════════════════════════════════════════════════════
+SCRIPTS DISPONÍVEIS
+═══════════════════════════════════════════════════════════════════════
+
+1. magic_number_calculator.py (11 KB)
+   → Calculadora interativa de números mágicos
+
+2. generate_figures.py (16 KB)
+   → Gera as 3 figuras do artigo (300 DPI)
+
+3. generate_stability_analysis.py (8 KB)
+   → Versão original do gerador de figuras (legado)
+
+═══════════════════════════════════════════════════════════════════════
+REQUISITOS
+═══════════════════════════════════════════════════════════════════════
+
+PYTHON:
+• Python 3.7 ou superior
+
+BIBLIOTECAS:
+• numpy (para cálculos numéricos)
+• matplotlib (para gráficos)
+
+INSTALAÇÃO:
+pip install numpy matplotlib
+
+OU se usar conda:
+conda install numpy matplotlib
+
+═══════════════════════════════════════════════════════════════════════
+1. MAGIC NUMBER CALCULATOR
+═══════════════════════════════════════════════════════════════════════
+
+DESCRIÇÃO:
+Calculadora interativa para números mágicos nucleares.
+Implementa a fórmula fenomenológica completa.
+
+EXECUTAR:
+python3 magic_number_calculator.py
+
+FUNCIONALIDADES:
+
+Menu principal com 6 opções:
+
+1. Validar todos os magic numbers conhecidos (0 → 184)
+   → Mostra tabela completa com verificação ✓
+   
+2. Calcular magic number específico
+   → Input: M_n, c_start, c_high-j
+   → Output: cálculo passo-a-passo detalhado
+   
+3. Mostrar hierarquia de estabilidade
+   → Tabela de níveis Δn = 2, 6, 12, 20, 30, 42
+   
+4. Mostrar padrão de sequências decrescentes
+   → Visualização ASCII do padrão universal
+   
+5. Modo interativo
+   → Calcular múltiplos valores consecutivamente
+   
+6. Sair
+
+EXEMPLO DE USO:
+
+$ python3 magic_number_calculator.py
+
+Options:
+1. Validate all known magic numbers (0 → 184)
+2. Calculate specific magic number
+3. Show stability hierarchy
+4. Show decreasing sequence patterns
+5. Interactive mode
+6. Exit
+
+Enter choice (1-6): 2
+Enter M_n: 82
+Enter c_start: 10
+Enter c_high-j: 14
+
+============================================================
+Calculating next magic number after M_n = 82
+============================================================
+
+Given parameters:
+  c_start  = 10
+  c_high-j = 14
+
+Step 1: Calculate Δn
+  Δn = c_start × (c_start + 2) / 4
+  Δn = 10 × 12 / 4
+  Δn = 120 / 4
+  Δn = 30
+
+  This is the sum of: 10 + 8 + 6 + 4 + 2
+  Sum verification: 30 = 30 ✓
+
+Step 2: Calculate C_total
+  C_total = Δn + c_high-j
+  C_total = 30 + 14
+  C_total = 44
+
+Step 3: Calculate M_{n+1}
+  M_{n+1} = M_n + C_total
+  M_{n+1} = 82 + 44
+  M_{n+1} = 126
+
+============================================================
+RESULT: Next magic number is 126
+============================================================
+
+CASOS DE USO:
+• Ensino em sala de aula
+• Verificação de cálculos manuais
+• Demonstrações interativas
+• Exercícios para estudantes
+• Exploração do padrão
+
+═══════════════════════════════════════════════════════════════════════
+2. GENERATE FIGURES (RECOMENDADO)
+═══════════════════════════════════════════════════════════════════════
+
+DESCRIÇÃO:
+Gera as três figuras do artigo em qualidade de publicação (300 DPI).
+Versão melhorada e bem documentada.
+
+EXECUTAR:
+python3 generate_figures.py
+
+OUTPUT:
+• figure1_delta_n_vs_BE.png (168 KB)
+  → Correlação Δn vs Energia de Ligação
+  → Pontos vermelhos: magic numbers
+  → Triângulos azuis: subshell closures
+  → Linha de tendência
+
+• figure2_hierarchy.png (142 KB)
+  → Hierarquia de estabilidade (6 níveis)
+  → Barras horizontais coloridas
+  → Exemplos de núcleos para cada nível
+  → Seta indicando crescimento de estabilidade
+
+• figure3_pattern_evolution.png (232 KB)
+  → Evolução do padrão recursivo (0→184)
+  → Sequências decrescentes visualizadas
+  → Orbitais "esfera" destacados em dourado
+  → Anotações explicativas
+
+TEMPO DE EXECUÇÃO:
+~2-3 segundos (depende do sistema)
+
+EXEMPLO DE OUTPUT:
+
+$ python3 generate_figures.py
+
+======================================================================
+FIGURE GENERATION FOR MAGIC NUMBERS ARTICLE
+======================================================================
+
+Author: André Luís Tomaz Dionísio
+Institution: EPHEC Brussels, Belgium
+Resolution: 300 DPI (publication quality)
+
+======================================================================
+
+Generating Figure 1: Δn vs Binding Energy...
+✓ Figure 1 saved: figure1_delta_n_vs_BE.png
+Generating Figure 2: Stability Hierarchy...
+✓ Figure 2 saved: figure2_hierarchy.png
+Generating Figure 3: Pattern Evolution...
+✓ Figure 3 saved: figure3_pattern_evolution.png
+
+======================================================================
+SUCCESS! All figures generated.
+======================================================================
+
+Generated files:
+  • figure1_delta_n_vs_BE.png (Δn vs Binding Energy)
+  • figure2_hierarchy.png (Stability Hierarchy)
+  • figure3_pattern_evolution.png (Pattern Evolution)
+
+These figures are ready for inclusion in the manuscript.
+======================================================================
+
+QUANDO USAR:
+• Regenerar figuras após modificações
+• Criar versões de alta resolução
+• Customizar cores ou estilos
+• Gerar figuras para apresentações
+
+CUSTOMIZAÇÃO:
+Edite o script para ajustar:
+• Cores (linha ~40: rcParams)
+• Resolução (linha 13: figure.dpi)
+• Tamanho das figuras (linha ~70, etc: figsize)
+• Dados experimentais (linha ~30: nuclear_data)
+
+═══════════════════════════════════════════════════════════════════════
+3. GENERATE STABILITY ANALYSIS (LEGADO)
+═══════════════════════════════════════════════════════════════════════
+
+DESCRIÇÃO:
+Versão original do gerador de figuras.
+Mantido para compatibilidade retroativa.
+
+EXECUTAR:
+python3 generate_stability_analysis.py
+
+NOTA:
+Use generate_figures.py em vez deste (versão melhorada).
+Este script é mantido apenas como referência histórica.
+
+═══════════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════
+
+PROBLEMA: "ModuleNotFoundError: No module named 'numpy'"
+SOLUÇÃO: pip install numpy matplotlib
+
+PROBLEMA: "ModuleNotFoundError: No module named 'matplotlib'"
+SOLUÇÃO: pip install matplotlib
+
+PROBLEMA: Figuras não aparecem
+SOLUÇÃO: Scripts salvam arquivos PNG, não abrem janelas.
+         Verifique no diretório atual os arquivos .png
+
+PROBLEMA: "Permission denied"
+SOLUÇÃO: chmod +x magic_number_calculator.py
+         chmod +x generate_figures.py
+
+PROBLEMA: Baixa resolução nas figuras
+SOLUÇÃO: Figuras já são 300 DPI (publicação).
+         Se precisar mais, edite figure.dpi no script.
+
+PROBLEMA: Python 2 vs Python 3
+SOLUÇÃO: Use python3 explicitamente:
+         python3 script.py (não python script.py)
+
+═══════════════════════════════════════════════════════════════════════
+DICAS DE USO
+═══════════════════════════════════════════════════════════════════════
+
+PARA ESTUDANTES:
+1. Execute magic_number_calculator.py
+2. Escolha opção 1 para ver validação completa
+3. Escolha opção 4 para entender o padrão
+4. Use opção 5 para praticar cálculos
+
+PARA PROFESSORES:
+1. Use generate_figures.py para criar slides
+2. Demonstre magic_number_calculator.py em aula
+3. Peça aos alunos para verificar cálculos
+4. Customize scripts para exercícios específicos
+
+PARA PESQUISADORES:
+1. Use generate_figures.py para papers
+2. Modifique dados experimentais conforme necessário
+3. Ajuste parâmetros visuais para journals específicos
+4. Integre scripts em seu workflow
+
+═══════════════════════════════════════════════════════════════════════
+ESTRUTURA DOS SCRIPTS
+═══════════════════════════════════════════════════════════════════════
+
+magic_number_calculator.py:
+├── calculate_delta_n()          # Calcula Δn
+├── calculate_next_magic()       # Calcula próximo magic
+├── display_calculation()        # Mostra passos detalhados
+├── validate_all_magic_numbers() # Valida 0→184
+├── show_stability_hierarchy()   # Mostra hierarquia
+├── show_decreasing_sequences()  # Mostra padrão
+├── interactive_mode()           # Modo interativo
+└── main()                       # Menu principal
+
+generate_figures.py:
+├── nuclear_data                 # Dados experimentais
+├── generate_figure1()           # Δn vs BE/A
+├── generate_figure2()           # Hierarquia
+├── generate_figure3()           # Evolução
+└── main()                       # Coordena tudo
+
+═══════════════════════════════════════════════════════════════════════
+EXTENSÕES POSSÍVEIS
+═══════════════════════════════════════════════════════════════════════
+
+IDEIAS PARA DESENVOLVIMENTO:
+
+1. Interface Gráfica (GUI)
+   → Usar tkinter ou PyQt
+   → Botões para cada função
+   → Gráficos interativos
+
+2. Web Application
+   → Flask ou Streamlit
+   → Acessível via browser
+   → Compartilhável online
+
+3. Animações
+   → Mostrar construção recursiva
+   → Passo-a-passo visual
+   → Exportar como vídeo
+
+4. Integração com Jupyter
+   → Notebooks interativos
+   → Ideal para ensino
+   → Combina código + explicação
+
+5. Análise Estatística Avançada
+   → Correlações adicionais
+   → Testes de significância
+   → Machine learning?
+
+═══════════════════════════════════════════════════════════════════════
+LICENÇA
+═══════════════════════════════════════════════════════════════════════
+
+Código: MIT License
+
+Copyright (c) 2025 André Luís Tomaz Dionísio
+
+Permission is hereby granted, free of charge, to any person obtaining 
+a copy of this software and associated documentation files (the 
+"Software"), to deal in the Software without restriction, including 
+without limitation the rights to use, copy, modify, merge, publish, 
+distribute, sublicense, and/or sell copies of the Software, and to 
+permit persons to whom the Software is furnished to do so, subject to 
+the following conditions:
+
+The above copyright notice and this permission notice shall be included 
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+═══════════════════════════════════════════════════════════════════════
+CONTATO E CONTRIBUIÇÕES
+═══════════════════════════════════════════════════════════════════════
+
+Autor: André Luís Tomaz Dionísio
+Email: andreluisdionisio@gmail.com
+Instituição: EPHEC Brussels, Belgium
+
+CONTRIBUIÇÕES:
+Se você melhorar os scripts, por favor compartilhe!
+Ideias e sugestões são bem-vindas.
+
+BUGS:
+Reporte bugs ou problemas via email.
+
+CITAÇÃO:
+Se usar estes scripts em seu trabalho, por favor cite:
+
+  Dionísio, A. L. T. (2025). A Phenomenological Pattern for 
+  Nuclear Magic Numbers. [Adicionar DOI após publicação]
+
+═══════════════════════════════════════════════════════════════════════
+CHANGELOG
+═══════════════════════════════════════════════════════════════════════
+
+v1.0 (02/12/2025)
+• Versão inicial pública
+• magic_number_calculator.py completo
+• generate_figures.py otimizado
+• Documentação completa
+
+Futuras versões anunciarão melhorias aqui.
+
+═══════════════════════════════════════════════════════════════════════
+FIM DO GUIA
+═══════════════════════════════════════════════════════════════════════
+
+Última atualização: 2 de Dezembro de 2025
+Versão: 1.0
+
+═══════════════════════════════════════════════════════════════════════

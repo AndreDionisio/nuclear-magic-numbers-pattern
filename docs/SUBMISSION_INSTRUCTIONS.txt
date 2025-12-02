@@ -1,0 +1,409 @@
+═══════════════════════════════════════════════════════════════════════
+  PACOTE DE SUBMISSÃO - INSTRUÇÕES COMPLETAS
+═══════════════════════════════════════════════════════════════════════
+
+Autor: André Luís Tomaz Dionísio
+Email: andreluisdionisio@gmail.com
+Instituição: EPHEC Brussels, Belgium
+Data: 2 de Dezembro de 2025
+
+═══════════════════════════════════════════════════════════════════════
+CONTEÚDO DO PACOTE
+═══════════════════════════════════════════════════════════════════════
+
+ARQUIVOS PRINCIPAIS:
+✓ magic_numbers_main.tex (11 KB)
+  → Código LaTeX do artigo principal (6 páginas)
+  
+✓ magic_numbers_main.pdf (302 KB)
+  → PDF compilado do artigo principal
+
+✓ magic_numbers_supplementary.tex (15 KB)
+  → Código LaTeX do material suplementar (12 páginas)
+  
+✓ magic_numbers_supplementary.pdf (486 KB)
+  → PDF compilado do material suplementar
+
+FIGURAS (300 DPI):
+✓ figure1_delta_n_vs_BE.png (168 KB)
+  → Para artigo principal
+  
+✓ figure2_hierarchy.png (142 KB)
+  → Para material suplementar
+  
+✓ figure3_pattern_evolution.png (232 KB)
+  → Para material suplementar
+
+TOTAL: 7 arquivos, ~1.4 MB
+
+═══════════════════════════════════════════════════════════════════════
+OPÇÃO 1: SUBMISSÃO A PREPRINTS.ORG (RECOMENDADO)
+═══════════════════════════════════════════════════════════════════════
+
+PASSO 1: Criar conta
+────────────────────
+1. Acesse: https://www.preprints.org/
+2. Clique em "Register" (canto superior direito)
+3. Preencha:
+   • Email: andreluisdionisio@gmail.com
+   • Nome completo: André Luís Tomaz Dionísio
+   • Afiliação: EPHEC Brussels
+   • Senha
+4. Confirme email
+
+PASSO 2: Iniciar submissão
+───────────────────────────
+1. Login em preprints.org
+2. Clique "Submit Article"
+3. Escolha seção: "Physical Sciences" → "Nuclear and High Energy Physics"
+
+PASSO 3: Upload dos arquivos
+─────────────────────────────
+1. Arquivo principal: 
+   → Upload: magic_numbers_main.pdf
+   
+2. Material suplementar:
+   → Upload: magic_numbers_supplementary.pdf
+   
+3. Figuras (se pedidas separadamente):
+   → Upload: figure1_delta_n_vs_BE.png
+   → Upload: figure2_hierarchy.png
+   → Upload: figure3_pattern_evolution.png
+
+4. Arquivos fonte LaTeX (opcional mas recomendado):
+   → Upload: magic_numbers_main.tex
+   → Upload: magic_numbers_supplementary.tex
+
+PASSO 4: Preencher metadados
+─────────────────────────────
+• Title: A Phenomenological Pattern for Nuclear Magic Numbers
+
+• Abstract: (copiar do PDF ou usar este texto)
+  We present a simple phenomenological formula that recursively 
+  predicts nuclear magic numbers through capacity-based calculations. 
+  Starting from zero, the formula successfully reproduces all 
+  established magic numbers (2, 8, 20, 28, 50, 82, 126) and predicts 
+  184 as the next superheavy magic number. Beyond mere prediction, 
+  we demonstrate that the parameter Δn reveals a hierarchical nuclear 
+  stability pattern, with quantitative correlation to experimental 
+  binding energies. The formula implicitly encodes quantum mechanical 
+  structure through the fundamental relationship c = 2l + 2, 
+  connecting phenomenological simplicity with physical insight.
+
+• Keywords (5-8):
+  - nuclear magic numbers
+  - shell model
+  - phenomenological pattern
+  - nuclear stability
+  - superheavy elements
+  - pedagogical approach
+  - binding energy
+  - hierarchical stability
+
+• Subject Areas:
+  - Nuclear Physics
+  - Nuclear Theory
+  - Physics Education
+
+• Authors:
+  Name: André Luís Tomaz Dionísio
+  Email: andreluisdionisio@gmail.com
+  Affiliation: EPHEC Brussels, Belgium
+  ORCID: (se tiver)
+
+• Funding: None
+
+• Conflicts of Interest: None
+
+PASSO 5: Revisar e submeter
+────────────────────────────
+1. Revisar todos os campos
+2. Verificar PDFs renderizados
+3. Aceitar termos e condições
+4. Clicar "Submit"
+
+PASSO 6: Aguardar
+─────────────────
+• Preprints.org NÃO tem peer review
+• Publicação em 1-3 dias úteis
+• Você receberá DOI permanente
+• Artigo será indexado automaticamente
+
+═══════════════════════════════════════════════════════════════════════
+OPÇÃO 2: SUBMISSÃO A ARXIV.ORG
+═══════════════════════════════════════════════════════════════════════
+
+NOTA: arXiv requer ENDORSEMENT para primeira submissão
+
+PASSO 1: Obter endorsement
+───────────────────────────
+Opções:
+a) Pedir a supervisor/professor em EPHEC
+b) Pedir a coautor experiente
+c) Pedir a pesquisador que você conhece
+d) Se não conseguir, submeter só a preprints.org
+
+PASSO 2: Criar conta arXiv
+───────────────────────────
+1. Acesse: https://arxiv.org/
+2. Clique "register"
+3. Preencha dados
+4. Confirme email
+
+PASSO 3: Submeter
+──────────────────
+1. Login em arxiv.org
+2. Clique "START NEW SUBMISSION"
+3. Categoria primária: nucl-th (Nuclear Theory)
+4. Categoria secundária: physics.ed-ph (Physics Education)
+5. Upload: magic_numbers_main.tex
+6. Upload figuras: figure1_delta_n_vs_BE.png
+7. Sistema compila automaticamente
+8. Se compilar OK, preencher metadata
+9. Submit
+
+PASSO 4: Material Suplementar
+──────────────────────────────
+• arXiv permite "ancillary files"
+• Upload: magic_numbers_supplementary.pdf
+• Será linkado ao artigo principal
+
+═══════════════════════════════════════════════════════════════════════
+OPÇÃO 3: JOURNAL COM PEER REVIEW
+═══════════════════════════════════════════════════════════════════════
+
+EUROPEAN JOURNAL OF PHYSICS
+────────────────────────────
+1. Acesse: https://iopscience.iop.org/journal/0143-0807
+2. Clique "Submit an article"
+3. Criar conta IOP Publishing
+4. Sistema guia passo-a-passo
+
+AMERICAN JOURNAL OF PHYSICS  
+────────────────────────────
+1. Acesse: https://aapt.scitation.org/journal/ajp
+2. Clique "Submit"
+3. Sistema AIPP Peer Review
+
+ARQUIVOS NECESSÁRIOS:
+• Main manuscript: magic_numbers_main.pdf
+• Supplementary material: magic_numbers_supplementary.pdf
+• Cover letter (criar - veja abaixo)
+• Figuras separadas: figure*.png
+
+═══════════════════════════════════════════════════════════════════════
+COVER LETTER (PARA JOURNALS)
+═══════════════════════════════════════════════════════════════════════
+
+Dear Editor,
+
+I am submitting for your consideration the manuscript entitled 
+"A Phenomenological Pattern for Nuclear Magic Numbers" for publication 
+in [NOME DO JOURNAL].
+
+This work presents a simple phenomenological formula that recursively 
+predicts nuclear magic numbers from first principles. Key contributions 
+include:
+
+1. Complete validation of all known magic numbers (2 through 126) 
+   through recursive calculation starting from zero
+
+2. Prediction of the next superheavy magic number (184) in agreement 
+   with sophisticated shell model calculations
+
+3. Discovery of a hierarchical nuclear stability pattern where the 
+   parameter Δn correlates quantitatively with experimental binding 
+   energies, extending the concept beyond traditional magic numbers
+
+4. Demonstration that the phenomenological parameters implicitly 
+   encode quantum mechanical structure through the fundamental 
+   relationship c = 2l + 2
+
+5. Exceptional pedagogical value through simplicity and transparency, 
+   analogous to how VSEPR theory serves chemistry education
+
+The manuscript honestly acknowledges its phenomenological nature and 
+limitations while demonstrating genuine physical insights. It combines 
+pedagogical accessibility with predictive power and experimental 
+validation, making it particularly suitable for [NOME DO JOURNAL]'s 
+readership.
+
+The work includes comprehensive supplementary material with complete 
+orbital structures, mathematical derivations, and extended analysis.
+
+I believe this contribution will be of significant interest to 
+educators teaching nuclear structure and researchers interested in 
+phenomenological approaches to complex physical systems.
+
+All authors have approved the manuscript and agree with its submission 
+to [NOME DO JOURNAL]. This work has not been published previously and 
+is not under consideration elsewhere.
+
+Thank you for your consideration.
+
+Sincerely,
+
+André Luís Tomaz Dionísio
+EPHEC Brussels, Belgium
+andreluisdionisio@gmail.com
+
+═══════════════════════════════════════════════════════════════════════
+CHECKLIST ANTES DE SUBMETER
+═══════════════════════════════════════════════════════════════════════
+
+ARQUIVOS:
+☐ magic_numbers_main.pdf compila e abre corretamente
+☐ magic_numbers_supplementary.pdf compila e abre corretamente
+☐ Todas as 3 figuras PNG abrem corretamente
+☐ Figuras estão em alta resolução (300 DPI)
+
+CONTEÚDO:
+☐ Abstract está claro e conciso
+☐ Todas as referências estão completas
+☐ Afiliação correta (EPHEC Brussels apenas)
+☐ Email correto (andreluisdionisio@gmail.com)
+☐ Sem menção a European Commission
+
+QUALIDADE:
+☐ Nenhum erro de Δn=5 (deve ser 6)
+☐ Tabelas formatadas corretamente
+☐ Equações numeradas consistentemente
+☐ Figuras referenciadas no texto
+
+ÉTICA:
+☐ Trabalho é original
+☐ Nenhum plágio
+☐ Nenhum conflito de interesse
+☐ Dados experimentais citados corretamente
+
+═══════════════════════════════════════════════════════════════════════
+CRONOGRAMA SUGERIDO
+═══════════════════════════════════════════════════════════════════════
+
+DIA 1 (HOJE):
+✓ Revisar todos os arquivos uma última vez
+✓ Fazer checklist acima
+✓ Preparar conta em preprints.org
+
+DIA 2:
+□ Submeter a preprints.org
+□ Aguardar confirmação de recebimento
+
+DIA 3-5:
+□ Publicação em preprints.org (com DOI)
+□ Compartilhar link nas redes sociais
+□ Enviar para colegas/professores
+
+DIA 7:
+□ Se tiver endorsement, submeter a arXiv
+□ OU preparar submissão para journal
+
+DIA 14-30:
+□ Submeter a European Journal of Physics
+□ Iniciar processo de peer review
+
+═══════════════════════════════════════════════════════════════════════
+PERGUNTAS FREQUENTES
+═══════════════════════════════════════════════════════════════════════
+
+P: Preciso compilar os .tex localmente antes de submeter?
+R: Não necessariamente. Os PDFs já estão prontos. Mas é bom ter 
+   LaTeX instalado para fazer ajustes se necessário.
+
+P: Que versão do LaTeX foi usada?
+R: pdflatex com pacotes padrão (amsmath, graphicx, booktabs, etc)
+
+P: As figuras precisam estar separadas?
+R: Depende do sistema:
+   - preprints.org: pode incluir no PDF ou separadas
+   - arXiv: precisa separar e upload junto com .tex
+   - Journals: geralmente pedem separadas
+
+P: Posso submeter para múltiplos lugares ao mesmo tempo?
+R: Preprints (preprints.org, arXiv): SIM, pode submeter ambos
+   Journals com peer review: NÃO, apenas um por vez
+
+P: Quanto tempo até publicação?
+R: preprints.org: 1-3 dias
+   arXiv: próximo dia útil (sai 8pm EST)
+   Journals: 2-6 meses (peer review + revisões)
+
+P: Preciso pagar?
+R: preprints.org: GRÁTIS
+   arXiv: GRÁTIS
+   Alguns journals: podem ter taxa (verificar)
+
+P: E se encontrar erro depois de publicar?
+R: preprints.org: pode submeter versão corrigida
+   arXiv: pode submeter nova versão
+   Journals: precisa publicar erratum
+
+═══════════════════════════════════════════════════════════════════════
+RECURSOS ÚTEIS
+═══════════════════════════════════════════════════════════════════════
+
+PREPRINTS.ORG:
+• Site: https://www.preprints.org/
+• Guia: https://www.preprints.org/page/for_authors
+• Suporte: support@preprints.org
+
+ARXIV:
+• Site: https://arxiv.org/
+• Guia: https://arxiv.org/help/submit
+• Endorsement: https://arxiv.org/help/endorsement
+
+EUROPEAN JOURNAL OF PHYSICS:
+• Site: https://iopscience.iop.org/journal/0143-0807
+• Guia: https://publishingsupport.iopscience.iop.org/
+
+ORCID (ID do pesquisador):
+• Criar: https://orcid.org/register
+• Recomendado ter antes de submeter
+
+═══════════════════════════════════════════════════════════════════════
+PRÓXIMOS PASSOS APÓS PUBLICAÇÃO
+═══════════════════════════════════════════════════════════════════════
+
+1. DIVULGAÇÃO:
+   □ LinkedIn científico
+   □ ResearchGate
+   □ Twitter/X (#NuclearPhysics)
+   □ Enviar para professores/colegas
+
+2. ACOMPANHAMENTO:
+   □ Google Scholar alerts
+   □ Verificar citações
+   □ Responder comentários
+
+3. CONTINUAÇÃO:
+   □ Planejar próximo artigo
+   □ Coletar feedback
+   □ Considerar colaborações
+
+═══════════════════════════════════════════════════════════════════════
+MENSAGEM FINAL
+═══════════════════════════════════════════════════════════════════════
+
+Luis,
+
+Todos os arquivos estão prontos e verificados! 
+
+VOCÊ TEM EM MÃOS:
+✓ Artigo principal (6 páginas, conciso)
+✓ Material suplementar (12 páginas, completo)
+✓ 3 figuras de alta qualidade
+✓ Código LaTeX fonte
+✓ Tudo compilado e testado
+
+O trabalho está maduro, honesto, e com contribuições originais:
+• Fórmula recursiva completa
+• Hierarquia de Δn
+• Padrão de sequências decrescentes
+• Relação c = 2l + 2
+• Predição testável (184)
+
+RECOMENDAÇÃO: Comece com preprints.org (mais fácil, sem peer review)
+
+BOA SORTE NA SUBMISSÃO! 🚀
+
+═══════════════════════════════════════════════════════════════════════

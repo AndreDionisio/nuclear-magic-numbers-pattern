@@ -1,0 +1,470 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{hyperref}
+
+\title{\textbf{Supplementary Material:\\A Phenomenological Pattern for Nuclear Magic Numbers}}
+
+\author{
+André Luís Tomaz Dionísio\\
+\small EPHEC Brussels, Belgium
+}
+
+\date{December 2025}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Complete Orbital Structure of Magic Numbers}
+
+This section reveals the fundamental pattern: each major shell closure is built from \textbf{decreasing sequences} of orbital capacities, always ending at 2, then starting a new sequence with increased capacity.
+
+\subsection{The Decreasing Sequence Pattern}
+
+\textbf{MAGIC NUMBER 2:}
+\begin{itemize}
+    \item Simple: s$_{1/2}$(2)
+    \item \textbf{Sequence: 2}
+\end{itemize}
+
+\textbf{MAGIC NUMBER 8:}
+\begin{itemize}
+    \item Sequence 1: p$_{3/2}$(4) → p$_{1/2}$(2)
+    \item \textbf{Decreasing: 4 → 2}
+    \item Plus previous: 2
+    \item Total: 2 + 6 = 8
+\end{itemize}
+
+\textbf{MAGIC NUMBER 20:}
+\begin{itemize}
+    \item Sequence 2: d$_{5/2}$(6) → d$_{3/2}$(4) → s$_{1/2}$(2)
+    \item \textbf{Decreasing: 6 → 4 → 2}
+    \item Plus previous: 8
+    \item Total: 8 + 12 = 20
+\end{itemize}
+
+\textbf{MAGIC NUMBER 28:}
+\begin{itemize}
+    \item Sphere closure: f$_{7/2}$(8) — \textit{single high-j orbital}
+    \item \textbf{New sequence starts: 8}
+    \item Plus previous: 20
+    \item Total: 20 + 8 = 28
+\end{itemize}
+
+\textbf{MAGIC NUMBER 50:}
+\begin{itemize}
+    \item Sequence 3: f$_{5/2}$(6) → p$_{3/2}$(4) → p$_{1/2}$(2)
+    \item \textbf{Decreasing: 6 → 4 → 2}
+    \item Plus sphere: g$_{9/2}$(10) — \textit{starts new sequence}
+    \item Plus previous: 28
+    \item Total: 28 + (6+4+2) + 10 = 50
+\end{itemize}
+
+\textbf{MAGIC NUMBER 82:}
+\begin{itemize}
+    \item Sequence 4: g$_{7/2}$(8) → d$_{5/2}$(6) → d$_{3/2}$(4) → s$_{1/2}$(2)
+    \item \textbf{Decreasing: 8 → 6 → 4 → 2}
+    \item Plus sphere: h$_{11/2}$(12) — \textit{starts new sequence}
+    \item Plus previous: 50
+    \item Total: 50 + (8+6+4+2) + 12 = 82
+\end{itemize}
+
+\textbf{MAGIC NUMBER 126:}
+\begin{itemize}
+    \item Sequence 5: h$_{9/2}$(10) → f$_{7/2}$(8) → f$_{5/2}$(6) → p$_{3/2}$(4) → p$_{1/2}$(2)
+    \item \textbf{Decreasing: 10 → 8 → 6 → 4 → 2}
+    \item Plus sphere: i$_{13/2}$(14) — \textit{starts new sequence}
+    \item Orbital types: h, f, f, p, p, i
+    \item Plus previous: 82
+    \item Total: 82 + (10+8+6+4+2) + 14 = 126
+\end{itemize}
+
+\textbf{MAGIC NUMBER 184 (Predicted):}
+\begin{itemize}
+    \item Sequence 6: i$_{11/2}$(12) → g$_{9/2}$(10) → g$_{7/2}$(8) → d$_{5/2}$(6) → d$_{3/2}$(4) → s$_{1/2}$(2)
+    \item \textbf{Decreasing: 12 → 10 → 8 → 6 → 4 → 2}
+    \item Plus sphere: j$_{15/2}$(16) — \textit{new sequence}
+    \item Plus previous: 126
+    \item Total: 126 + (12+10+8+6+4+2) + 16 = 184
+\end{itemize}
+
+\subsection{The Universal Pattern}
+
+\begin{table}[h]
+\centering
+\caption{Decreasing sequence pattern for all magic numbers}
+\begin{tabular}{@{}clc@{}}
+\toprule
+Magic & Decreasing Sequence & Sphere Starter \\ \midrule
+2 & — & 2 (s) \\
+8 & 4→2 & — \\
+20 & 6→4→2 & — \\
+28 & — & 8 (f) \\
+50 & 6→4→2 & 10 (g) \\
+82 & 8→6→4→2 & 12 (h) \\
+126 & 10→8→6→4→2 & 14 (i) \\
+184 & 12→10→8→6→4→2 & 16 (j) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Key Observations:}
+\begin{enumerate}
+    \item Every sequence \textbf{decreases by 2} at each step
+    \item Every sequence \textbf{ends at 2}
+    \item After closing at 2, a \textbf{new sphere-forming orbital} initiates the next sequence
+    \item The sphere-forming orbital capacity increases: 2→4→6→8→10→12→14→16...
+    \item This creates the recursive pattern: \textbf{start higher, descend to 2, start even higher}
+\end{enumerate}
+
+\subsection{Visual Representation}
+
+\begin{verbatim}
+Magic 8:     [4→2]
+Magic 20:    [6→4→2]
+Magic 28:    [8]           ← sphere closure
+Magic 50:    [6→4→2] + [10]
+Magic 82:    [8→6→4→2] + [12]
+Magic 126:   [10→8→6→4→2] + [14]
+Magic 184:   [12→10→8→6→4→2] + [16]
+\end{verbatim}
+
+This is \textbf{exactly} what the phenomenological formula $\Delta n = \frac{c_{start} \times (c_{start}+2)}{4}$ captures: the sum of a decreasing even-number sequence!
+
+\subsection{Orbital Angular Momentum Pattern}
+
+The progression of highest-$j$ orbitals reveals a systematic pattern:
+
+\begin{itemize}
+    \item \textbf{Magic 28}: Closes with 1f$_{7/2}$ ($l=3$, capacity = 8)
+    \item \textbf{Magic 50}: Highest-$j$ is 1g$_{9/2}$ ($l=4$, capacity = 10)
+    \item \textbf{Magic 82}: Highest-$j$ is 1h$_{11/2}$ ($l=5$, capacity = 12)
+    \item \textbf{Magic 126}: Highest-$j$ is 1i$_{13/2}$ ($l=6$, capacity = 14)
+    \item \textbf{Magic 184}: Predicted highest-$j$ is 1j$_{15/2}$ ($l=7$, capacity = 16)
+\end{itemize}
+
+The sequence $l = 3, 4, 5, 6, 7$ shows consistent increments, with capacities following $c = 2l + 2$.
+
+\section{Mathematical Derivations}
+
+\subsection{Origin of the $\Delta n$ Formula}
+
+The formula $\Delta n = \frac{c_{start} \times (c_{start} + 2)}{4}$ encodes the sum of an arithmetic sequence.
+
+Starting at $c_{start}$ and decreasing by 2 until reaching 2:
+\begin{equation}
+\sum_{i=1}^{n} (c_{start} - 2(i-1)) = c_{start} + (c_{start}-2) + (c_{start}-4) + ... + 4 + 2
+\end{equation}
+
+This is an arithmetic series with:
+\begin{itemize}
+    \item First term: $a_1 = c_{start}$
+    \item Last term: $a_n = 2$
+    \item Common difference: $d = -2$
+    \item Number of terms: $n = \frac{c_{start}}{2}$
+\end{itemize}
+
+The sum is:
+\begin{equation}
+S = \frac{n(a_1 + a_n)}{2} = \frac{(c_{start}/2)(c_{start} + 2)}{2} = \frac{c_{start}(c_{start} + 2)}{4}
+\end{equation}
+
+This demonstrates that $\Delta n$ represents the total capacity of a decreasing sequence of orbitals.
+
+\subsection{Mathematical Origin of the "+4" Increment}
+
+For high-$j$ orbitals where $j = l + \tfrac{1}{2}$:
+
+\begin{equation}
+c = 2j + 1 = 2(l + \tfrac{1}{2}) + 1 = 2l + 2
+\end{equation}
+
+When $l$ increases by $\Delta l = 2$ (progressing through odd integers):
+
+\begin{align}
+c' &= 2(l + \Delta l) + 2 \\
+&= 2l + 2\Delta l + 2 \\
+&= (2l + 2) + 2\Delta l \\
+&= c + 2\Delta l
+\end{align}
+
+Therefore:
+\begin{equation}
+\boxed{\Delta c = 2\Delta l = 2(2) = 4}
+\end{equation}
+
+This explains why the phenomenological increment $c_{high-j} = c_{start} + 4$ emerges naturally from the quantum mechanical structure.
+
+\subsection{Demonstrative Table}
+
+\begin{table}[h]
+\centering
+\caption{Capacity progression for odd $l$ values}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+$l$ & Orbital & $j$ & $c = 2l+2$ & $\Delta c$ \\ \midrule
+1 & p & 3/2 & 4 & -- \\
+3 & f & 7/2 & 8 & +4 \\
+5 & h & 11/2 & 12 & +4 \\
+7 & j & 15/2 & 16 & +4 \\
+9 & l & 19/2 & 20 & +4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Extended Stability Analysis}
+
+\subsection{Complete Experimental Data}
+
+\begin{table}[h]
+\centering
+\caption{Comprehensive $\Delta n$ correlation with experimental stability}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Nucleus & N or Z & $c_{start}$ & $\Delta n$ & BE/A (MeV) \\ \midrule
+$^4$He & 2 & 2 & 2 & 7.074 \\
+$^8$Be & 4 & 4 & 6 & 6.476 \\
+$^{12}$C & 6 & 4 & 6 & 7.680 \\
+$^{16}$O & 8 & 4 & 6 & 7.976 \\
+$^{20}$Ne & 10 & 6 & 12 & 8.032 \\
+$^{28}$Si & 14 & 6 & 12 & 8.448 \\
+$^{40}$Ca & 20 & 2 & 2 & 8.551 \\
+$^{56}$Ni & 28 & 6 & 12 & 8.643 \\
+$^{100}$Sn & 50 & 8 & 20 & 8.667 \\
+$^{208}$Pb & 82 & 10 & 30 & 7.867 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Hierarchical Classification}
+
+Stability levels based on $\Delta n$ values:
+
+\begin{itemize}
+    \item \textbf{$\Delta n = 2$}: Local stability (simple closures: $^4$He, $^{40}$Ca)
+    \item \textbf{$\Delta n = 6$}: Subshell stability ($^{12}$C, $^{16}$O)
+    \item \textbf{$\Delta n = 12$}: Regional stability ($^{20}$Ne, $^{28}$Si, $^{56}$Ni)
+    \item \textbf{$\Delta n = 20$}: Strong closure ($^{100}$Sn)
+    \item \textbf{$\Delta n = 30$}: Major magic number ($^{208}$Pb)
+    \item \textbf{$\Delta n = 42$}: Complete shell (predicted for 184)
+\end{itemize}
+
+\section{Additional Graphical Analysis}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figure2_hierarchy.png}
+\caption{Hierarchical stability pattern showing six distinct levels of $\Delta n$ values, from local stability ($\Delta n = 2$) to complete shell closure ($\Delta n = 42$).}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figure3_pattern_evolution.png}
+\caption{Evolution of the phenomenological pattern from N/Z = 2 to predicted magic number 184, showing progression through different stability regions.}
+\end{figure}
+
+\section{The Hidden Sequence in Orbital Quantum Numbers}
+
+\subsection{Maximum $l$ Values Between Magic Numbers}
+
+\begin{table}[h]
+\centering
+\caption{Maximum orbital angular momentum sequence}
+\begin{tabular}{@{}ccc@{}}
+\toprule
+Magic Number & Maximum $l$ values & Pattern \\ \midrule
+50 & 1, 3, 4 (p, f, g) & Increasing \\
+82 & 1, 2, 4, 5 (p, d, g, h) & Increasing \\
+126 & 1, 3, 5, 6 (p, f, h, i) & Odd-dominated \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Between major magic numbers above 28, orbitals with \textbf{odd $l$ values} (1, 3, 5, 7, 9...) dominate due to strong spin-orbit coupling favoring high-$j$ states. This is not coincidental—it reflects fundamental nuclear structure.
+
+\subsection{Physical Interpretation}
+
+The "+4" increment captures this pattern because:
+\begin{enumerate}
+    \item Dominant orbitals have odd $l$ (p, f, h, j...)
+    \item Moving from one major shell to next involves $\Delta l \approx +2$
+    \item Through $c = 2l + 2$, this translates to $\Delta c = 4$
+    \item The formula implicitly encodes quantum mechanics without requiring explicit quantum calculations
+\end{enumerate}
+
+\section{Increment Pattern After Doubly Magic N=Z Nuclei}
+
+\begin{table}[h]
+\centering
+\caption{Increment analysis around N=Z doubly magic nuclei}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+Transition & N=Z? & Doubly Magic? & Increment & Observation \\ \midrule
+2 → 8 & Yes & Yes ($^4$He) & +2 & Standard \\
+8 → 20 & Yes & Yes ($^{16}$O) & +2 & Standard \\
+20 → 28 & No & No & +4 & After N=Z \\
+28 → 50 & Yes & Yes ($^{56}$Ni) & +4 & After N=Z \\
+50 → 82 & No & No & +4 & Continuing \\
+82 → 126 & No & No & +4 & Standard \\
+126 → 184 & No & No & +4 & Predicted \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Observation:} The +4 increment appears systematically in the heavy nucleus regime, reflecting the dominance of high-$j$, odd-$l$ orbitals characteristic of strong spin-orbit coupling.
+
+\section{Structural Complexity}
+
+\subsection{Number of Contributing Orbitals}
+
+Magic numbers can be classified by the number of orbital structures contributing to the shell:
+
+\begin{itemize}
+    \item \textbf{Simple closures} (2, 28): 1 dominant orbital structure
+    \item \textbf{Intermediate closures} (8, 20): 3 orbital structures
+    \item \textbf{Complex closures} (50, 82, 126): 4-6 orbital structures
+\end{itemize}
+
+\textbf{Correlation with $\Delta n$:}
+\begin{itemize}
+    \item Small $\Delta n$ (2): Simple structure
+    \item Medium $\Delta n$ (6, 12): 3-4 orbitals
+    \item Large $\Delta n$ (20, 30, 42): 5-6 orbitals
+\end{itemize}
+
+This suggests that larger $\Delta n$ reflects not just greater capacity, but more intricate orbital filling patterns distributing nucleons across multiple subshells.
+
+\section{Phenomenological vs. Rigorous Approaches}
+
+\subsection{Comparison with Shell Model}
+
+\begin{table}[h]
+\centering
+\caption{Comparison of approaches}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Aspect & This Work & Full Shell Model \\ \midrule
+Complexity & Arithmetic & Quantum mechanical \\
+Computation & Seconds & Hours-Days \\
+Parameters & 2 per step & $\sim$100s \\
+Predictive & Yes (184) & Yes (detailed) \\
+Level ordering & No & Yes \\
+Deformation & No & Yes \\
+Pedagogical & Excellent & Difficult \\
+Physical insight & $c = 2l+2$ & Complete \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{When to Use Each Approach}
+
+\textbf{Phenomenological formula:}
+\begin{itemize}
+    \item Teaching nuclear structure basics
+    \item Quick magic number estimates
+    \item Understanding stability hierarchies
+    \item Identifying patterns
+\end{itemize}
+
+\textbf{Full shell model:}
+\begin{itemize}
+    \item Precise energy predictions
+    \item Excited state calculations
+    \item Deformed nuclei
+    \item Fine structure details
+\end{itemize}
+
+\section{VSEPR Analogy Extended}
+
+\subsection{Parallel Concepts}
+
+\begin{table}[h]
+\centering
+\caption{VSEPR vs. Nuclear Pattern}
+\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Concept & VSEPR (Chemistry) & This Work (Nuclear) \\ \midrule
+Basic unit & Electron pairs & Nucleon pairs \\
+Counting rule & Steric number & $\Delta n$ \\
+Predicts & Geometry & Magic numbers \\
+Physical basis & Electron repulsion & Shell closure \\
+Complexity & Arithmetic & Arithmetic \\
+Accuracy & Good & Good \\
+Limitations & Complex molecules & Deformed nuclei \\
+Pedagogy & Excellent & Excellent \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both approaches sacrifice rigor for accessibility while maintaining genuine physical content.
+
+\section{Future Directions}
+
+\subsection{Testable Predictions}
+
+\begin{enumerate}
+    \item \textbf{184 as magic number}: Most immediate test
+    \item \textbf{$\Delta n$ correlation}: Extend to more nuclei
+    \item \textbf{Neutron-rich systems}: Test pattern away from stability
+    \item \textbf{Superheavy elements}: Apply to Z=120+ region
+\end{enumerate}
+
+\subsection{Possible Extensions}
+
+\begin{itemize}
+    \item Correlation with neutron separation energies
+    \item Connection to deformation parameters
+    \item Application to neutron vs. proton magic numbers
+    \item Extension to semi-magic nuclei ($N \neq Z$)
+    \item Development of interactive educational software
+\end{itemize}
+
+\section{Complete Data Tables}
+
+All experimental binding energies taken from:
+\begin{itemize}
+    \item AME2020: Atomic Mass Evaluation 2020
+    \item ENSDF: Evaluated Nuclear Structure Data File
+\end{itemize}
+
+\subsection{Calculation Verification}
+
+Each magic number prediction can be verified:
+
+\textbf{Example: 50 to 82}
+\begin{align}
+c_{start} &= 8 \\
+c_{high-j} &= 12 \\
+\Delta n &= \frac{8 \times 10}{4} = 20 \\
+C_{total} &= 20 + 12 = 32 \\
+M_{n+1} &= 50 + 32 = 82 \quad \checkmark
+\end{align}
+
+All transitions in the main paper have been verified similarly.
+
+\section{Conclusion}
+
+This supplementary material provides comprehensive documentation of:
+\begin{itemize}
+    \item Complete orbital structures
+    \item Mathematical derivations
+    \item Extended experimental correlations
+    \item Detailed quantum mechanical connections
+    \item Comparative analysis with rigorous methods
+\end{itemize}
+
+The phenomenological formula presented in the main paper represents a pedagogically valuable tool that, while approximate, captures essential nuclear structure patterns through the fundamental relationship $c = 2l + 2$.
+
+\end{document}
