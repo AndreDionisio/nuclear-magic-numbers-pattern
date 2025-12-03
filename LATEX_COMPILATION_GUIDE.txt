@@ -1,0 +1,52 @@
+═══════════════════════════════════════════════════════════════════════
+  LATEX FILES - COMPILATION GUIDE
+  Nuclear Magic Numbers Paper
+═══════════════════════════════════════════════════════════════════════
+
+ARQUIVOS LATEX INCLUÍDOS:
+• magic_numbers_main.tex (39 KB) - Main article
+• magic_numbers_supplementary.tex (31 KB) - Supplementary material
+• figure1_delta_n_vs_BE.png (168 KB)
+• figure2_hierarchy.png (142 KB)
+• figure3_pattern_evolution.png (232 KB)
+
+═══════════════════════════════════════════════════════════════════════
+QUICK START
+═══════════════════════════════════════════════════════════════════════
+
+LINUX/MAC:
+$ pdflatex magic_numbers_main.tex
+$ pdflatex magic_numbers_main.tex
+
+WINDOWS (Command Line):
+> pdflatex magic_numbers_main.tex
+> pdflatex magic_numbers_main.tex
+
+OVERLEAF:
+1. Upload all files
+2. Set magic_numbers_main.tex as main document
+3. Click Recompile
+
+═══════════════════════════════════════════════════════════════════════
+REQUIRED PACKAGES
+═══════════════════════════════════════════════════════════════════════
+
+All standard packages (usually pre-installed):
+✓ amsmath, amssymb
+✓ graphicx
+✓ hyperref
+✓ geometry
+✓ booktabs
+✓ caption
+
+═══════════════════════════════════════════════════════════════════════
+OUTPUT FILES
+═══════════════════════════════════════════════════════════════════════
+
+After compilation:
+• magic_numbers_main.pdf (17 pages, ~700 KB)
+• magic_numbers_supplementary.pdf (20 pages, ~520 KB)
+
+Total: 37 pages of content
+
+═══════════════════════════════════════════════════════════════════════
